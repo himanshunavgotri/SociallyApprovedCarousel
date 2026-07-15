@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Socially Approved Carousel</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>Socially Approved</h1>
+    <p>Swipe through what people are loving right now</p>
+  </header>
+
+  <!-- OUTER SLIDER -->
+  <section class="outer-slider-wrap">
+    <button class="outer-nav outer-nav--left" id="outerPrev" aria-label="Scroll left">&#8249;</button>
+    <div class="outer-slider" id="outerSlider">
+      <div class="outer-slider__track" id="outerTrack">
+        <!-- thumbnail items injected by app.js -->
+      </div>
+    </div>
+    <button class="outer-nav outer-nav--right" id="outerNext" aria-label="Scroll right">&#8250;</button>
+  </section>
+
+  <!-- INNER SLIDER MODAL -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+
+      <button class="inner-nav inner-nav--left" id="innerPrev" aria-label="Previous video">&#8249;</button>
+      <div class="inner-slider" id="innerSlider">
+        <div class="inner-track" id="innerTrack">
+          <!-- slide players injected by app.js -->
+        </div>
+      </div>
+      <button class="inner-nav inner-nav--right" id="innerNext" aria-label="Next video">&#8250;</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
